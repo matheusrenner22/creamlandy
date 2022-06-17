@@ -5,9 +5,19 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-image: url('./Assets/img/mirage.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
-  background-color: rgb(240, 152, 200);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
   padding: 10px;
+  z-index: 1;
 }
 
 nav {
@@ -41,15 +51,16 @@ ul a {
 }
 
 ul a:hover {
-  color: #fff;
+  color: rgb(247, 96, 121);
 }
 
 button {
   border: none;
-  padding: 12px 10px;
+  padding: 12px 20px;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  background-color: rgb(247, 96, 121);
 }
 
 button:hover {
@@ -63,10 +74,7 @@ img {
 
 .sub-section {
   height: 80vh;
-  background-image: url(./Assets/img/mirage.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  z-index: 0;
   position: relative;
 }
 
@@ -107,6 +115,11 @@ img {
   text-align: center;
   margin-top: 100px;
   text-transform: uppercase;
+}
+
+.models h2::before {
+  display: block;
+  content: "🍩";
 }
 
 .models h2::after {
@@ -150,9 +163,13 @@ img {
 
 .item-models button {
   margin-top: 10px;
-  background-color: rgb(235, 98, 121);
-  padding: 12px 12px;
   width: 100px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(247, 96, 121);
 }
 
 .item-models button:hover {
@@ -161,11 +178,14 @@ img {
 }
 
 footer {
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   text-align: center;
   font-weight: bold;
+  z-index: 2;
+  color: #fff;
 }
 
 footer p > span {
-  color: rgb(67, 1, 129);
+  color: rgb(202, 146, 255);
 }
